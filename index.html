@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <title>Arkanoid</title>
+    </head>
+    <body>
+        <main>
+            <div class="game-window" id="gameWin">
+                <div 
+                    class="bola" 
+                    id="bola"
+                    style="
+                        top: calc(100% - 70px);
+                        left: 0;
+                    "
+                ></div>
+                <div 
+                    class="barra-player" 
+                    id="barraPlayerDiv"
+                    style = "
+                        top: calc(100% - 50px);
+                        left: 0;
+                    "
+                ></div>
+            </div>
+            <button id="startGameBtn">Empezar</button>
+        </main>
+    </body>
+    <script src="./app/app.js"></script>
+</html>
