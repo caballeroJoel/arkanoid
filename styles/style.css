@@ -20,10 +20,36 @@ main {
     gap: 1rem;
 }
 
+.vidas {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    > div {
+        display: flex;
+        gap: 12px;
+    }
+}
+.vida {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.alive {
+    background-color: red;
+}
+.ded {
+    background-color: gray;
+}
+
 .game-window{
     position: relative;
     width: 50%;
     min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+
     background-color: rgb(125, 182, 182);
     border-bottom: 2px solid red;
 }
@@ -43,4 +69,42 @@ main {
     width: 150px;
     height: 20px;
     background-color: white;
+}
+
+.bloques {
+    position: absolute;
+    width: 80%;
+    top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.bloques .fila {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+.bloque {
+    width: 75px;
+    height: 25px;
+}
+.fila.red {
+    div {
+        background-color: red;
+    }
+}
+.fila.green {
+    div {
+        background-color: green;
+    }
+}
+.fila.blue {
+    div {
+        background-color: blue;
+    }
+}
+
+.hidden {
+    visibility: hidden;
 }
